@@ -1,0 +1,21 @@
+# build
+markdown: kramdown
+permalink: /blog/:title/
+exclude:
+  - CNAME
+  - Gemfile
+  - LICENSE
+  - Rakefile
+  - README.md
+  - vendor/
+sass:
+  sass_dir: theme/_scss
+# theme
+theme:
+  name: "Cantor, Fink, &amp; Taub"
+  description: Serving Buffalo's injured for over 36 years
+  author:
+    name: Rachel Cantor
+  lang: en
+  favicons:
+    - /img/favicon-152.png

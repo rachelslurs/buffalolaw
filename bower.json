@@ -1,0 +1,30 @@
+{
+  "name": "BuffaloLaw.com",
+  "version": "0.0.1",
+  "homepage": "http://www.buffalolaw.com",
+  "authors": [
+    "Rachel Cantor"
+  ],
+  "description": "A basic contact page made with Polymer",
+  "main": "index.html",
+  "keywords": [
+    "polymer",
+    "contact",
+    "legal",
+    "services",
+    "buffalo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.2",
+    "paper-elements": "Polymer/paper-elements#~0.5.2"
+  }
+}

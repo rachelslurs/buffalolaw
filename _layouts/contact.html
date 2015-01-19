@@ -17,8 +17,8 @@
       href="{{ favicon }}">
   {% endfor %}
 
-  <link rel="stylesheet" href="/theme/app.css">
-  <script src="/theme/js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="{{ site.baseurl }}/theme/app.css">
+  <script src="{{ site.baseurl }}/theme/js/vendor/modernizr.js"></script>
 </head>
 <body>
  
@@ -104,9 +104,9 @@
     <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
     <a href="#" class="close-reveal-modal">&times;</a>
   </div>
-   <script src="/theme/js/vendor/jquery.js"></script>
-  <!--<script src="/theme/js/vendor/fastclick.js"></script>-->
-  <script src="/theme/js/foundation.min.js"></script>
+   <script src="{{ site.baseurl }}/theme/js/vendor/jquery.js"></script>
+  <!--<script src="{{ site.baseurl }}/theme/js/vendor/fastclick.js"></script>-->
+  <script src="{{ site.baseurl }}/theme/js/foundation.min.js"></script>
   <script>$(document).foundation();</script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 # build
 markdown: kramdown
 permalink: /blog/:title/
+baseurl: /buffalolaw
 exclude:
   - CNAME
   - Gemfile

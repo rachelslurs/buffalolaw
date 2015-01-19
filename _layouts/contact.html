@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <title>Cantor, Fink, &amp; Taub | {{ page.title }}</title>
   {% include robots.html %}
   {% include meta-description.html %}
 
@@ -21,34 +21,48 @@
   <script src="{{ site.baseurl }}/theme/js/vendor/modernizr.js"></script>
 </head>
 <body>
- 
+  <!-- For Foundation Icons, put this in your head -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="row full-width">
+    <div class="small-12 medium-3 large-4 columns">
+      <i class="fi-laptop style1"></i>
+      <h2><a href="mailto:info@buffalolaw.com">info@buffalolaw.com</a></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+    </div>
+    <div class="small-12 medium-3 large-4 columns">
+      <i class="fi-telephone style1"></i>
+      <h1>716-848-8000</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+    </div>
+    <div class="small-12 medium-3 large-4 columns">
+      <i class="fi-marker style1"></i>
+      <h1>Buffalo, NY</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+    </div>
+  </div>
+</footer>              
+
   <!-- Main Page Content and Sidebar -->
-  <div class="row">
+  <div class="row full-width">
  <!-- Sidebar -->
-    <div class="large-4 columns">
-      <h5>&nbsp;</h5>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m20!1m8!1m3!1d2923.3473346209535!2d-78.87591503495455!3d42.88661803071616!3m2!1i1024!2i768!4f13.1!4m9!1i0!3e6!4m0!4m5!1s0x89d31249a74002ff%3A0x73a49eca5bdb9eb6!2s43+Court+St%2C+Buffalo%2C+NY+14202!3m2!1d42.8860992!2d-78.8762369!5e0!3m2!1sen!2sus!4v1421628692737" width="300" height="450" frameborder="0" style="border:0"></iframe>
-      <p>
-        43 Court Street<br />
-        Suite 930<br />
-        Buffalo, New York 14202
-      </p>
-      <p>716-848-8000</p>
+    <div class="large-5 columns">
+       <h5>&nbsp;</h5>
+      <img src="{{ site.baseurl }}{{ page.image }}">
     </div>
     <!-- End Sidebar -->
-
     <!-- Contact Details -->
-    <div class="large-8 columns">
+    <div class="large-7 columns" style="background-color:whitesmoke">
 
       <h5>&nbsp;</h5>
-      <img src="http://placehold.it/800x280">
-      <h3>{{ page.title }}</h3>
-
+      <h2>{{ page.title }}</h2>
       <p>{{ content }}</p>
       <div class="large-12 columns">
         <dl class="tabs" data-tab="">
           <dd class="active"><a href="#htab-panel1">Contact Us</a></dd>
-          <dd class=""><a href="#htab-panel2">Specific Person</a></dd></dl>  
+          <dd class=""><a href="#htab-panel2">Contact a Specific Person</a></dd></dl>  
         <div class="tabs-content">
           <div class="content active" id="htab-panel1">
             <form>
@@ -76,12 +90,20 @@
           <div class="content" id="htab-panel2">
             <div class="content" data-slug="panel2">
               <h6>Attorneys</h6>
-              <ul class="large-block-grid-3">
+              <ul class="large-block-grid-5">
                 <li><a href="mailto:mark@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[partner]">Mark Cantor</a></li>
                 <li><a href="mailto:steven@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[partner]">Steven Fink</a></li>
                 <li><a href="mailto:michael@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[partner]">Michael Taub</a></li>
                 <li><a href="mailto:rebecca@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[associate]">Rebecca Schnirel</a></li>
                 <li><a href="mailto:mlevitz@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[associate]">Michael Levitz</a></li>
+              </ul>
+              <h6>Administration</h6>
+              <ul class="large-block-grid-5">
+                <li><a href="mailto:sharon@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[person]">Sharon Valente</a></li>
+                <li><a href="mailto:rachel@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[person]">Rachel Cantor</a></li>
+                <li><a href="mailto:alejandra@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[person]">Alejandra</a></li>
+                <li><a href="mailto:mindy@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[person]">Mindy Fink</a></li>
+                <li><a href="mailto:tammy@buffalolaw.com"><img src="http://placehold.it/200x200&amp;text=[associate]">Tammy</a></li>
               </ul>
             </div>
           </div>
@@ -91,19 +113,29 @@
  
     
   </div>
- 
+ </div>
   <!-- End Main Content and Sidebar -->
- 
- 
-  <!-- Map Modal -->
- 
-  <div class="reveal-modal" id="mapModal">
-    <h4>Where We Are</h4>
-    <p><img src="http://placehold.it/800x600" /></p>
- 
-    <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
-    <a href="#" class="close-reveal-modal">&times;</a>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="row full-width">
+    <div class="small-12 medium-3 large-4 columns">
+      <i class="fi-laptop style1"></i>
+      <h2><a href="mailto:info@buffalolaw.com">info@buffalolaw.com</a></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+    </div>
+    <div class="small-12 medium-3 large-4 columns">
+      <i class="fi-telephone style1"></i>
+      <h1>716-848-8000</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+    </div>
+    <div class="small-12 medium-3 large-4 columns">
+      <i class="fi-marker style1"></i>
+      <h1>Buffalo, NY</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+    </div>
   </div>
+</footer>             
    <script src="{{ site.baseurl }}/theme/js/vendor/jquery.js"></script>
   <!--<script src="{{ site.baseurl }}/theme/js/vendor/fastclick.js"></script>-->
   <script src="{{ site.baseurl }}/theme/js/foundation.min.js"></script>

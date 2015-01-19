@@ -1,5 +1,93 @@
 ---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
 ---
-
 @import "normalize";
 @import "foundation";
+
+.full-width {
+  max-width: 1400px;
+}
+
+$text-color: #fff;
+
+// footer CSS
+
+.footer {
+  background-color: #2a3342;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: $text-color;
+  i {
+    font-size: 50px;
+  }
+  .style1 {
+		color: $tangerine;
+		text-shadow: 1px 4px 6px #000, 0 0 0 #000, 1px 4px 6px $bluedark;
+    }
+}
+
+.footer {
+  h4 {
+    color: $text-color;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+  }
+  p {
+    font-weight: 300; 
+    font-size: .8em;
+    color: $text-color;
+    text-align: left;
+  }
+  a {
+  	font-weight: 300;
+  	font-size:.8em;
+  	color:#d1dae5;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+    border-left: 1px solid scale-color($text-color, $lightness: -30%);
+    min-height: 200px;
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+}         
+
+.tabs {
+margin-bottom: 0 !important;
+margin-left: 0;
+border-bottom: 1px solid $bluedark;
+}     
+
+.tabs dd.active a, .tabs .tab-title.active a {
+background-color: transparent; 
+color: #222222;
+border-bottom: 5px solid $bluedark;
+font-weight: bold;
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+outline: none;
+display: block;
+background-color: transparent;
+color: #222222;
+padding: 1rem 2rem;
+font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+font-size: 1rem;
+}
+
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+background-color: transparent;
+}

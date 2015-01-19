@@ -87,15 +87,21 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
-// $white       : #FFFFFF;
+$lightgray       : #dddedf;
+$white          : #FFFFFF;
+$blueblack		: #1a2028;
+$bluedark		: #2a3342;
+$bluemedium		: #3e4e6b;
+$bluelight		: #d1dae5;
+$tangerine		: #d75c36;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -112,20 +118,20 @@ $include-html-global-classes: $include-html-classes;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
-// $jet         : #222222;
+$jet         : #222222;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
+$primary-color: $bluedark;
+$secondary-color: $bluemedium;
+$alert-color: $tangerine;
+$success-color: $secondary-color;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
+$body-bg: $bluemedium;
+$body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -195,7 +201,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: $font-family-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
@@ -1443,3 +1449,205 @@ $include-html-global-classes: $include-html-classes;
 // $include-table-visibility-classes: true;
 // $include-legacy-visibility-classes: true;
 // $include-accessibility-classes: true;
+
+
+//FOOTER
+.full-width {
+  max-width: 1400px;
+}
+
+$text-color: #fff;
+
+// footer CSS
+
+.footer {
+  background-color: $bluemedium;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: $text-color;
+  i {
+    font-size: 100px;
+  }
+}
+
+.footer {
+  h4 {
+    color: $text-color;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+  }
+  p, a {
+    font-weight: 300; 
+    font-size: .8em;
+    color: $text-color;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+    border-left: 1px solid scale-color($text-color, $lightness: -30%);
+    min-height: 280px;
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+} 
+
+//QUOTE
+
+h2 {
+  margin-top: 40px;
+  font-weight: 200;
+  color: #333;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.quote-marks {
+  font-size: 100px;
+  font-family: Garamond;
+  color: #777;
+}
+
+.move-right {
+  position: relative;
+  text-align: right;
+}
+
+.quote {
+  border-radius: 5px;
+  p {
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .quote p {
+    padding-left: 20px;
+  }
+}
+
+.student {
+  margin-left: 25px;
+  margin-bottom: 80px;
+  .photo {
+    background-color: #ccc;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-right: 15px;
+  }
+  p {
+    position: relative;
+    top: 5px;
+    &:nth-child(2) {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    &:nth-child(3) {
+      font-size: 14px;
+      font-weight: 400;
+      color: #777;
+    }
+  }
+}        
+
+//PROFILE
+.bump{
+  margin-top: 50px;
+  padding-right: 30px;
+  padding-left:30px;
+}
+
+.profile-card{
+  padding-top: 15px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+  background: #2B2937;
+  overflow:hidden;
+  h4{
+    font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 30px;
+    line-height:26px;
+    span{
+      font-size: 20px;
+      color: #8C91A7;
+      display: block;
+    }
+  }
+  img{
+    border-radius: 50%;
+    border: 4px solid #69708C;
+  }
+  .button-group{
+    width: 101%;
+    .button{
+      margin-bottom: 0;
+      border-top: none;
+      border-left: none;
+      border-right: 2px solid #2B2937;
+      border-bottom: none;
+      background-color: #394165;
+      height: 80px;
+      padding-top: 15px;
+      margin-top: 20px;
+      font-weight:200;
+      font-size: 16px;
+      line-height: 26px;
+      color: #8C91A7;
+      box-shadow: none;
+      span{
+       display: block;
+       font-size: 24px;
+       font-weight: 600;
+       color:#fff;
+      }
+    }
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #8C91A7;
+    }
+  i{
+    font-size: 26px;
+    vertical-align:middle;
+    padding-right: 5px;
+    color: #394165;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .profile-card{
+    img{
+     margin-left:auto;
+     margin-right:auto;
+     width:40%;
+    }
+    h4, p{
+      text-align: center;
+    }
+    .button-group .button{
+      font-size: 14px;
+      span{
+        font-size: 20px
+      }
+    }
+  }
+}
+

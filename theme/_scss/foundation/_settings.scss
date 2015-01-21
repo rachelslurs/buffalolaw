@@ -96,6 +96,7 @@ $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-weight-bold: bold !default;
 
 $lightgray       : #dddedf;
+$creme			: #F5F3EE;
 $white          : #FFFFFF;
 $blueblack		: #1a2028;
 $bluedark		: #2a3342;
@@ -130,7 +131,7 @@ $success-color: $secondary-color;
 // $info-color: #a0d3e8;
 
 // We use these to control various global styles
-$body-bg: $bluemedium;
+$body-bg: $white;
 $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -960,7 +961,7 @@ $header-font-family: $font-family-serif;
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color($white, $lightness: -5%);
+$panel-bg: $creme;
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 

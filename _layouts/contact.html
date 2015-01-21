@@ -23,13 +23,23 @@
 <body>
   <!-- For Foundation Icons, put this in your head -->
 <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">          
-<div class="icon-bar one-up">
-  <a class="item">
-      <img src="{{ site.baseurl }}/img/buffalo-law-logo.png">
-    <label><h2>{{ page.title }}</h2></label>
-  </a>
-</div>
   <!-- Main Page Content and Sidebar -->
+  <footer class="header">
+    <div class="row full-width">
+      <div class="small-12 medium-2 large-3 columns">
+        <img src="{{ site.baseurl }}/img/buffalo-law-logo.png" class="logo">
+      </div>
+      <div class="small-12 medium-3 large-4 columns slogan">
+        <p>{{ page.title }}</p>
+        <!-- <img src="{{ site.baseurl }}/img/skyline.png"> -->
+      </div>
+      <div class="small-12 medium-3 large-4 columns">
+        <p><i class="fi-mail style1"></i><a href="mailto:info@buffalolaw.com">&nbsp;&nbsp;info@buffalolaw.com</a></p>
+        <p><i class="fi-telephone style1"></i>&nbsp;&nbsp;716-848-8000</p>
+        <p><i class="fi-marker style1"></i>&nbsp;&nbsp;43 Court Street | Suite 930 | Buffalo, NY 14202</p>
+      </div>
+    </div>
+  </footer>
   <div class="row full-width">
  <!-- Sidebar -->
     <div class="large-6 columns">
@@ -103,21 +113,7 @@
   <!-- Footer -->
 <footer class="footer">
   <div class="row full-width">
-    <div class="small-12 medium-3 large-4 columns">
-      <i class="fi-mail style1"></i>
-      <h2><a href="mailto:info@buffalolaw.com">info@buffalolaw.com</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
-    </div>
-    <div class="small-12 medium-3 large-4 columns">
-      <i class="fi-telephone style1"></i>
-      <h1>716-848-8000</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
-    </div>
-    <div class="small-12 medium-3 large-4 columns">
-      <i class="fi-marker style1"></i>
-      <h1>Buffalo, NY</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
-    </div>
+    
   </div>
 </footer>             
    <script src="{{ site.baseurl }}/theme/js/vendor/jquery.js"></script>

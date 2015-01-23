@@ -58,27 +58,7 @@
             <dd class=""><a href="#htab-panel2">Contact a Specific Person</a></dd></dl>  
           <div class="tabs-content">
             <div class="content active" id="htab-panel1">
-              <form>
-                <div class="row collapse">
-                  <div class="large-2 columns">
-                    <label class="inline">Your Name</label>
-                  </div>
-                  <div class="large-10 columns">
-                    <input type="text" id="yourName" placeholder="Proud Buffalonian">
-                  </div>
-                </div>
-                <div class="row collapse">
-                  <div class="large-2 columns">
-                    <label class="inline"> Your Email</label>
-                  </div>
-                  <div class="large-10 columns">
-                    <input type="text" id="yourEmail" placeholder="jane@smithco.com">
-                  </div>
-                </div>
-                <label>Message</label>
-                <textarea rows="4"></textarea>
-                <button type="submit" class="radius button">Submit</button>
-              </form>
+             {% include contact-form.html %}
             </div>
             <div class="content" id="htab-panel2">
               <div class="content" data-slug="panel2">
